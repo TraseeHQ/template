@@ -9,3 +9,4 @@ Cookiecutter template for Python projects
 ### Usage
 * Install [cookiecutter](https://github.com/cookiecutter/cookiecutter)
 * Execute `cookiecutter gh:TraseeHQ/template`
+* Enter the new project and run `make setup` to prepare development environment
