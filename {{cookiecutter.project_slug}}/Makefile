@@ -5,8 +5,8 @@ setup: ## Setup development environment
 	git init
 	pre-commit install
 	poetry install
+	git add .
 	pre-commit run --all-files --hook-stage manual
-	git add poetry.lock
 
 format: ## Run pre-commit hooks to format code
 	pre-commit run --all-files
