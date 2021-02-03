@@ -11,9 +11,9 @@ setup: ## Setup development environment
 format: ## Run pre-commit hooks to format code
 	pre-commit run --all-files
 
-args ?= -vvv
+args ?= -vvv --cov={{cookiecutter.project_slug}} tests/
 test: ## Run tests
-	pytest $(args)
+	poetry run pytest $(args)
 
 shell: ## Run poetry shell
 	poetry shell

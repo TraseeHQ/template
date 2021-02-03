@@ -40,9 +40,8 @@ repos:
     hooks:
       - id: tests
         name: run tests
-        entry: poetry run pytest -v {{cookiecutter.project_slug}}
-        files: "test_*"
+        entry: poetry run pytest -v --cov={{cookiecutter.project_slug}}/
+        files: "test_"
         verbose: true
         language: system
-        types: [python]
         stages: [push, manual]
